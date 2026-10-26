@@ -28,7 +28,7 @@ export function FinalCta() {
             href={waLink("Hi Escapeways! I'd like to chat about planning a trip.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 text-sm font-semibold text-forest-deep transition-opacity hover:opacity-90"
+            className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 text-sm font-semibold text-forest-deep transition-opacity hover:opacity-90"
           >
             <WhatsAppIcon className="size-4" />
             Chat on WhatsApp
