@@ -43,20 +43,11 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:h-20">
         <a href="#top" className="flex items-center gap-2" aria-label="Escapeways home">
-          <span
-            className={`flex size-9 items-center justify-center rounded-full transition-colors duration-500 ${
-              scrolled ? "bg-primary text-primary-foreground" : "bg-primary-foreground/15 text-primary-foreground backdrop-blur-sm"
-            }`}
-          >
-            <Mountain className="size-5" aria-hidden="true" />
-          </span>
-          <span
-            className={`font-display text-2xl tracking-wide transition-colors duration-500 ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
-          >
-            Escapeways
-          </span>
+          <img
+            src={scrolled ? logoForest.url : logoWhite.url}
+            alt="Escapeways — Go Beyond the Usual"
+            className="h-7 w-auto md:h-8"
+          />
         </a>
 
         <ul className="hidden items-center gap-7 lg:flex">
