@@ -65,7 +65,7 @@ export function Services() {
     <section id="services" className="bg-forest-mist/10 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="section-label justify-center after:absolute after:relative">
+          <p className="section-label mx-auto">
             Our Services
           </p>
           <h2 className="section-title mt-4">
