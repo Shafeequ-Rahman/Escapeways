@@ -1,5 +1,5 @@
-import { Mountain } from "lucide-react";
 import { InstagramIcon, WhatsAppIcon } from "@/components/BrandIcons";
+import logoLockup from "@/assets/escapeways-logo-lockup_white.asset.json";
 import {
   INSTAGRAM_URL,
   PHONE_PRIMARY_DISPLAY,
@@ -24,11 +24,12 @@ export function Footer() {
     <footer className="bg-forest-deep text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-3 md:gap-8">
         <div>
-          <a href="#top" className="flex items-center gap-2">
-            <span className="flex size-9 items-center justify-center rounded-full bg-primary-foreground/12">
-              <Mountain className="size-5" aria-hidden="true" />
-            </span>
-            <span className="font-display text-2xl tracking-wide">Escapeways</span>
+          <a href="#top" className="inline-block" aria-label="Escapeways home">
+            <img
+              src={logoLockup.url}
+              alt="Escapeways — Go Beyond the Usual"
+              className="h-auto w-56 sm:w-64"
+            />
           </a>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
             {TAGLINE}

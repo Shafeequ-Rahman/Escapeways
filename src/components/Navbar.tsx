@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import { Menu, Mountain, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/BrandIcons";
 import { TAGLINE, waLink } from "@/lib/site";
+import logoWhite from "@/assets/escapeways-logo-wm_white.asset.json";
+import logoForest from "@/assets/escapeways-logo-wm_forest.asset.json";
+import logoLockup from "@/assets/escapeways-logo-lockup_white.asset.json";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -40,20 +43,11 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:h-20">
         <a href="#top" className="flex items-center gap-2" aria-label="Escapeways home">
-          <span
-            className={`flex size-9 items-center justify-center rounded-full transition-colors duration-500 ${
-              scrolled ? "bg-primary text-primary-foreground" : "bg-primary-foreground/15 text-primary-foreground backdrop-blur-sm"
-            }`}
-          >
-            <Mountain className="size-5" aria-hidden="true" />
-          </span>
-          <span
-            className={`font-display text-2xl tracking-wide transition-colors duration-500 ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
-          >
-            Escapeways
-          </span>
+          <img
+            src={scrolled ? logoForest.url : logoWhite.url}
+            alt="Escapeways — Go Beyond the Usual"
+            className="h-7 w-auto md:h-8"
+          />
         </a>
 
         <ul className="hidden items-center gap-7 lg:flex">
@@ -101,7 +95,7 @@ export function Navbar() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-forest-deep text-primary-foreground lg:hidden">
           <div className="flex h-16 items-center justify-between px-4">
-            <span className="font-display text-2xl tracking-wide">Escapeways</span>
+            <img src={logoLockup.url} alt="Escapeways — Go Beyond the Usual" className="h-10 w-auto" />
             <button
               type="button"
               onClick={() => setOpen(false)}
