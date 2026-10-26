@@ -39,12 +39,18 @@ export function FeaturedExperiences() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+        <div className="mt-14 grid auto-rows-[170px] grid-flow-dense grid-cols-2 gap-3 sm:auto-rows-[200px] sm:gap-4 lg:grid-cols-4">
           {EXPERIENCES.map((item, i) => (
             <Reveal
               key={item.label}
               delay={(i % 4) * 90}
-              className={i === 0 || i === 5 ? "col-span-2 row-span-2 lg:col-span-2" : ""}
+              className={
+                i === 0 || i === 5
+                  ? "col-span-2 row-span-2"
+                  : i === 7
+                    ? "col-span-2"
+                    : ""
+              }
             >
               <figure className="group relative h-full min-h-40 overflow-hidden rounded-2xl">
                 <img
