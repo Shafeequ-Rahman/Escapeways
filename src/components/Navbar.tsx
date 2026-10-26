@@ -95,7 +95,7 @@ export function Navbar() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-forest-deep text-primary-foreground lg:hidden">
           <div className="flex h-16 items-center justify-between px-4">
-            <span className="font-display text-2xl tracking-wide">Escapeways</span>
+            <img src={logoLockup.url} alt="Escapeways — Go Beyond the Usual" className="h-10 w-auto" />
             <button
               type="button"
               onClick={() => setOpen(false)}
