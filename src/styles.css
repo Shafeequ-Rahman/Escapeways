@@ -47,6 +47,7 @@
   --color-forest-mist: var(--forest-mist);
   --color-sand: var(--sand);
   --color-gold: var(--gold);
+  --color-whatsapp: var(--whatsapp);
   --font-display: "Instrument Serif", ui-serif, Georgia, serif;
   --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
 }
@@ -76,6 +77,7 @@
   --forest-mist: oklch(0.62 0.07 145);
   --sand: oklch(0.9 0.042 88);
   --gold: oklch(0.78 0.115 82);
+  --whatsapp: oklch(0.755 0.19 156.5);
 }
 
 .dark {
