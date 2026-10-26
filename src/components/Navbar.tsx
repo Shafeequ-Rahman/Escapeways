@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import { Menu, Mountain, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/BrandIcons";
 import { TAGLINE, waLink } from "@/lib/site";
+import logoWhite from "@/assets/escapeways-logo-wm_white.asset.json";
+import logoForest from "@/assets/escapeways-logo-wm_forest.asset.json";
+import logoLockup from "@/assets/escapeways-logo-lockup_white.asset.json";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
