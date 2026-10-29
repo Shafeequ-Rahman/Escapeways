@@ -7,18 +7,19 @@ export function Hero() {
     <section id="top" className="relative flex min-h-[92svh] items-center overflow-hidden">
       <img
         src={heroImage}
-        alt="A glowing tent on a misty mountain meadow at sunrise"
-        className="animate-kenburns absolute inset-0 size-full object-cover"
-        width={1920}
-        height={1088}
+        alt="Guests gathered around a bonfire under warm string lights at an Escapeways night camp"
+        className="animate-kenburns absolute inset-0 size-full object-cover object-center"
+        width={1080}
+        height={1350}
         fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-forest-deep/70 via-forest-deep/35 to-forest-deep/80" />
+      {/* Subtle dark vignette — keeps the vibrant amber bonfire glow visible */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-black/65" />
 
       <div className="relative mx-auto w-full max-w-6xl px-4 py-28 text-primary-foreground sm:px-6">
         <p className="animate-rise mb-5 inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-1.5 text-xs font-medium tracking-[0.18em] uppercase backdrop-blur-sm">
           <MapPin className="size-3.5 text-gold" aria-hidden="true" />
-          Premium travel & camping experiences
+          Premium travel &amp; camping experiences
         </p>
         <h1
           className="animate-rise max-w-3xl font-display text-5xl leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
