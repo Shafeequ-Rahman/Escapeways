@@ -21,6 +21,8 @@ export const waLink = (message?: string) =>
     ? `${WHATSAPP_PRIMARY_URL}?text=${encodeURIComponent(message)}`
     : WHATSAPP_PRIMARY_URL;
 
+
+
 /** Standard enquiry message pattern used across the site. */
 export const enquiryMessage = (topic: string) =>
   `Hi Escapeways! I'm interested in your ${topic}. Could you share more details?`;

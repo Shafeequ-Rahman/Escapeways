@@ -1,17 +1,18 @@
 import { ArrowRight, ChevronDown, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 import { waLink } from "@/lib/site";
 
 export function Hero() {
   return (
     <section id="top" className="relative flex min-h-[92svh] items-center overflow-hidden">
-      <img
-        src={heroImage}
-        alt="Guests gathered around a bonfire under warm string lights at an Escapeways night camp"
-        className="animate-kenburns absolute inset-0 size-full object-cover object-center"
-        width={1080}
-        height={1350}
-        fetchPriority="high"
+      <video
+        src={heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+        className="absolute inset-0 size-full object-cover object-center"
       />
       {/* Subtle dark vignette — keeps the vibrant amber bonfire glow visible */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-black/65" />
